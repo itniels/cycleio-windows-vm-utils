@@ -1,7 +1,7 @@
 # ============================================================
 # Cycle Windows VM Netconf
 # Applies cloud-init "network-config" to Windows NICs
-# Compatible with PowerShell 5 (Windows Server)
+# Tested with PowerShell 5 on Windows Server 2025
 #
 # Copyright (c) 2025 Petrichor Holdings, Inc. (Cycle)
 # ============================================================
