@@ -1,4 +1,4 @@
-name: Build & Release PowerShell Script ISO
+name: Build & Release ISO
 
 on:
   workflow_dispatch:
