@@ -41,13 +41,11 @@ jobs:
 
             cp version.txt iso-content/
 
-            VOL_LABEL="CYCLE-HELPERS-${{ github.event.inputs.version }}"
-
             xorriso -as mkisofs \
-            -V "$VOL_LABEL" \
-            -o cycle-helpers.iso \
+            -V "cycle-utils-${{ github.event.inputs.version }}" \
+            -J -R \
+            -o cycle-utils.iso \
             iso-content
-
       - name: Upload ISO artifact
         uses: actions/upload-artifact@v4
         with:
